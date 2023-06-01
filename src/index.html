@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title id="pageTitle">OpenLabs</title>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" integrity="sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+<body>
+<div class="all">
+<div class="sidebar">
+	<div class="ButtonContainer">
+		<button id="openFolderBtn">
+			<i class="fa-solid fa-folder"></i>
+		</button>
+		<button id="createFolderBtn">
+			<i class="fa-solid fa-folder-plus"></i>
+		</button>
+		<button id="createFileBtn">
+			<i class="fa-solid fa-file"></i>
+		</button>
+		<button id="DebugFileBtn">
+			<i class="fa-solid fa-bug"></i>
+		</button>
+		<button id="SearchFileBtn">
+			<i class="fa-solid fa-magnifying-glass"></i>
+		</button>
+		<button id="ErrorFileBtn">
+			<i class="fa-solid fa-triangle-exclamation"></i>
+		</button>
+	</div>
+</div>
+	<div class="file-list" id="fileContainer">
+		<ul id="fileList"></ul>
+	</div>
+	<div class="topbar">
+
+	</div>
+
+	<div id="terminal"></div>
+
+</div>
+<div id="container"></div>
+
+<script>
+	require('./file')
+</script>
+
+</body>
+</html>

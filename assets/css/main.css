@@ -1,0 +1,192 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	border-radius: 20px;
+	box-sizing: border-box;
+}
+
+
+#container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+
+}
+
+.all{
+	width: 100%;
+	transform: translateY(10px);
+	max-width: 30%;
+	height: 100%;
+	display: flex;
+	background: rgba(43,43,43);
+	align-items: center;
+	flex-direction: column;
+}
+
+.file-list {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.file-editor {
+	border-radius: 20px;
+	opacity: 0.8;
+	backdrop-filter: blur(50px) brightness(120%);
+	filter: blur(20px);
+	background: rgba(43,43,43);
+}
+
+.sidebar {
+	width: 100%;
+	transform: translateY(-50%);
+	height: 50px;
+	border: 1px solid #434343;
+	background: rgba(43,43,43);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 10px;
+	max-width: 400px;
+}
+
+.sidebar button {
+	color: #f0f0f0;
+	outline: none;
+	background: transparent;
+	border: none;
+}
+
+
+.file-icon{
+	scale: 0.8;
+}
+
+.file-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	margin: 3px;
+	padding-top: 4px;
+	padding-right: 5%;
+	cursor: pointer;
+	padding-left: 4px;
+	font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+	color: #f0f0f0;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+}
+
+
+.file-icon {
+	margin-right: 10px;
+}
+
+.file-name {
+	font-size: 13px;
+	font-weight: normal;
+	font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.file-path {
+	font-size: 12px;
+	color: #666;
+	white-space: nowrap;
+	overflow: auto;
+}
+
+
+.sub-folder-content {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	transform: translateX(-110px) translateY(10px);
+}
+
+.top-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #e5e5e5;
+	display: flex;
+	align-items: center;
+	height: 20px;
+}
+
+.open-file-item {
+	display: flex;
+	align-items: center;
+	margin-right: 5px;
+	padding: 5px;
+	border-radius: 3px;
+	background-color: #e8e8e8;
+}
+
+.arrow svg{
+	margin-bottom: 3px;
+	width: 10px;
+	height: 10px;
+}
+
+.file-icon svg{
+	margin-left: 2px;
+	width: 12px;
+	height: 12px;
+}
+
+#fileContainer{
+	width: 100%;
+}
+
+.open-file-item .file-icon {
+	margin-right: 5px;
+}
+
+.open-file-item .close-button {
+	border: none;
+	background-color: transparent;
+	color: #999;
+	margin-left: 5px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.open-file-item .close-button:hover {
+	color: #555;
+}
+
+.selected-file{
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 2px;
+	background: #b9f143;
+}
+
+.folder-content {
+	transition: opacity 0.2s ease-in;
+}
+/* Appliquez le flou à l'arrière-plan de l'éditeur */
+.monaco-editor-background {
+	backdrop-filter: blur(5px); // Ajustez la valeur de flou selon vos
+}
+
+
+.selected-file .file-icon {
+	color: #101010;
+}
+
+.selected-file .file-name {
+	color: #000000;
+}
